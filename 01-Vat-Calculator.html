@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vat Calculator</title>
+  <link rel="website icon" type="png" href="logo (1).png">
+  <link rel="stylesheet" href="./01-Vat-Calculator.css">
+</head>
+<body>
+  <div class="Div">
+    <div class="div2">
+    <a href="./00-Home-Page.html" class="back">Back</a>
+    <h1 class="heading">VTC Vat Calcuator</h1>
+    <marquee class="marquee-text">This vat calculator is used to calculate your vat simply from your wage</marquee>
+    <input class="js-cost-input cost-input" placeholder="Set your wage" onkeydown="
+      handleCostKeydown(event);
+    ">
+    <pre class="pre">Wairning: Donot use a letter on this calculetor!!</pre>
+      <p class="js-total-cost total-cost"></p>
+    <button onclick="
+      calculateTotal();
+    " class="btn">Calaculate</button>
+  </div>
+  </div>
+    <script src="./01-Vat-Calculator.js"></script>
+</body>
+</html>
